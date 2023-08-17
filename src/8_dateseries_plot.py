@@ -13,7 +13,7 @@ plt.plot_date(report_dates, price_list, linestyle='solid')
 plt.gcf().autofmt_xdate()  # get current figures
 
 date_format = dates.DateFormatter('%d.%m.%Y')
-plt.gca().xaxis.set_major_formatter(date_format)
+plt.gca().xaxis.set_major_formatter(date_format) # get current axis
 
 plt.tight_layout()
 plt.show()
